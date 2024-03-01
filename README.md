@@ -1,4 +1,4 @@
-# fnr-android-project
+# fnr-android-project-pokedex-android
 Repositório dedicado ao projeto de desenvolvimento Android.
 
 Equipe:
