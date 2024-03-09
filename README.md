@@ -1,8 +1,7 @@
-# fnr-android-project-pokedex-android
-Repositório dedicado ao projeto de desenvolvimento Android.
+# fnr-android-project
 
-Equipe:
-Adrian Modesto Lauzid;
-Artur Vinícius Lima Ramos da Silva;
-Gustavo dos Santos Silva;
-Lucas Pereira de Souza;
+# Casas Mobile: grupo 1
+- Adrian Modesto Lauzid
+- Artur Vinícius Lima Ramos da Silva
+- Gustavo dos Santos Silva
+- Lucas Pereira de Souza
