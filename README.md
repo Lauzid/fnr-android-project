@@ -9,3 +9,11 @@
 # Figma
 
 # Doc de Requisitos
+
+Requisito 1:
+
+Requisito 2:
+
+Requisito 3:
+
+Requisito 4:
