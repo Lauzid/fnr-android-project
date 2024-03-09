@@ -6,7 +6,7 @@
 - Gustavo dos Santos Silva
 - Lucas Pereira de Souza
 
-# Figma
+# Figma 
 
 # Doc de Requisitos
 
