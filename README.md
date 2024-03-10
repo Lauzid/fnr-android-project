@@ -1,6 +1,6 @@
 # fnr-android-project
 
-# Magic Catalog Mobile: grupo 1
+# GrimoireMTG: grupo 1
 - Adrian Modesto Lauzid
 - Artur Vinícius Lima Ramos da Silva
 - Gustavo dos Santos Silva
