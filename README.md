@@ -7,7 +7,7 @@
 - Lucas Pereira de Souza
 
 # Figma 
-
+https://www.figma.com/file/APmX398bDJ9AbX3c6gRhnO/GrimoireMTG?type=design&node-id=0-1&mode=design&t=UyVKm4hZYCk1EwNy-0
 # Doc de Requisitos
 
 Requisito 1:
