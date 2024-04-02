@@ -11,6 +11,7 @@
 https://www.figma.com/file/APmX398bDJ9AbX3c6gRhnO/GrimoireMTG?type=design&node-id=0-1&mode=design&t=UyVKm4hZYCk1EwNy-0
 
 # Doc de Requisitos
+https://docs.google.com/document/d/1Yp-0MAeedumbe75an_35sOCIwNzMSGWsEkDzI9Ry2gQ/edit?usp=sharing
 
 Requisito 1:
 
