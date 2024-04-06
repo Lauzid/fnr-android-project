@@ -7,6 +7,9 @@
 - Lucas Pereira de Souza
 - Luciano Machado Lins Sobrinho
 
+# Link API
+https://scryfall.com/docs/api
+
 # Figma 
 https://www.figma.com/file/APmX398bDJ9AbX3c6gRhnO/GrimoireMTG?type=design&node-id=0-1&mode=design&t=UyVKm4hZYCk1EwNy-0
 
