@@ -1,24 +1,54 @@
-# Material de Apoio para apresentação
+#Material de Apoio
+#Introdução
 
-A arquitetura Model-View-Controller (MVC) é um padrão de design amplamente utilizado no desenvolvimento de software para separar as preocupações de apresentação, lógica de negócios e manipulação de dados. Este modelo proporciona uma estrutura organizada e modular que facilita a manutenção, escalabilidade e colaboração entre os desenvolvedores. Vamos explorar mais detalhadamente cada componente do MVC.
+A Arquitetura MVC (Model-View-Controller) é um padrão amplamente adotado no desenvolvimento de software, especialmente em aplicações web e móveis. Surgindo inicialmente na década de 1970 como parte do framework Smalltalk-80, desenvolvido por Trygve Reenskaug na Xerox PARC, o MVC revolucionou como as aplicações são projetadas e organizadas. Seu propósito fundamental é separar as preocupações numa aplicação, dividindo-a em três componentes principais: Modelo (Model), Visão (View) e Controlador (Controller). Essa separação permite uma estrutura mais organizada, reutilização de código e facilita a manutenção e evolução das aplicações ao longo do tempo.
 
-O MVC divide uma aplicação em três componentes principais:
-
-- Model (Modelo): Representa a camada de dados e lógica de negócios da aplicação. Aqui, as operações de leitura, escrita e manipulação dos dados são realizadas. O modelo é independente da interface do usuário, o que significa que ele pode ser reutilizado em diferentes contextos de visualização.
-
-- View (Visualização): É a camada de apresentação da aplicação, responsável por exibir informações ao usuário final. As views são passivas, o que significa que elas apenas apresentam os dados fornecidos pelo modelo e respondem às interações do usuário, como cliques em botões ou preenchimento de formulários.
-
-- Controller (Controlador): Atua como intermediário entre o modelo e a visualização. Ele recebe as entradas do usuário da view, processa essas entradas com base na lógica de negócios definida no modelo e atualiza a view com os dados resultantes. O controlador também lida com eventos e direciona o fluxo de controle dentro da aplicação.
+Neste trabalho, exploraremos em detalhes o funcionamento da arquitetura MVC, sua origem, propósito, os problemas que ela resolve e os desafios que ainda persistem nesse modelo. 
 
 
-A separação clara entre modelo, visualização e controle oferecida pelo MVC traz diversos benefícios para o desenvolvimento de software:
+#Surgimento e propósito
 
-- Organização Estruturada: O MVC permite uma organização modular do código, facilitando a compreensão e a manutenção ao separar responsabilidades específicas em cada componente.
+A arquitetura MVC foi concebida na década de 1970 por Trygve Reenskaug, um pesquisador da Xerox PARC, como parte do desenvolvimento do framework Smalltalk-80. O propósito principal do MVC era separar as preocupações relacionadas aos dados, à lógica de negócios e à interface do usuário, facilitando a manutenção e evolução das aplicações.
 
-- Reutilização de Código: Como o modelo é independente da visualização, é possível reutilizar o mesmo modelo em diferentes partes da aplicação ou até mesmo em projetos diferentes, promovendo a consistência e a eficiência no desenvolvimento.
 
-- Testabilidade: A separação entre modelo, visualização e controle facilita a realização de testes unitários e de integração, pois cada componente pode ser testado de forma isolada, garantindo a qualidade do software.
+#Problemas resolvidos
+- Separação de preocupações: A arquitetura MVC resolve o problema da mistura de código de apresentação, lógica de negócios e acesso a dados em uma única camada, permitindo uma estrutura mais organizada e modular.
 
-- Escalabilidade: Com uma arquitetura bem definida como o MVC, é mais fácil escalar a aplicação conforme necessário, adicionando novas funcionalidades ou adaptando-a a novos requisitos sem comprometer a estrutura existente.
+- Reutilização de código: ao separar as camadas, o código pode ser reutilizado mais facilmente em diferentes partes da aplicação, melhorando a eficiência do desenvolvimento.
 
-Em resumo, a arquitetura MVC é uma abordagem eficaz para o desenvolvimento de software, especialmente em projetos que exigem separação clara de responsabilidades e escalabilidade. Ao adotar o MVC, os desenvolvedores podem criar aplicações mais organizadas, testáveis e fáceis de manter, resultando em um produto final de alta qualidade e melhor experiência para o usuário.
+- Facilidade de manutenção: com a divisão clara das responsabilidades entre Modelo, Visão e Controlador, as mudanças em uma parte da aplicação tendem a ter um impacto limitado nas outras partes, facilitando a manutenção e evolução do sistema.
+
+
+#Problemas existentes
+- Complexidade em aplicações grandes: em aplicações de grande escala, a separação estrita entre Modelo, Visão e Controlador pode resultar em complexidade adicional devido à necessidade de coordenar a interação entre essas camadas.
+
+- Tendência à duplicação de código: em algumas implementações, pode haver uma tendência à duplicação de código, especialmente na camada de Controlador, se não houver uma gestão cuidadosa das responsabilidades.
+
+- Sincronização entre camadas: em cenários onde há uma grande interdependência entre o Modelo, a Visão e o Controlador, garantir uma sincronização adequada pode ser desafiador e levar a problemas de consistência.
+
+#Funcionamento da Arquitetura
+Funcionamento da Arquitetura MVC (Model-View-Controller) é baseado na separação de responsabilidades entre três componentes principais: Modelo (Model), Visão (View) e Controlador (Controller). Cada um desses componentes desempenha um papel específico na aplicação, facilitando a organização, a manutenção e a evolução do software.
+
+#Modelo (Model):
+O Modelo representa os dados da aplicação, incluindo a lógica de negócios e as regras de acesso aos dados.
+Ele é responsável por gerenciar o estado da aplicação, interagindo com o banco de dados para recuperar e armazenar informações.
+Além disso, o Modelo pode conter operações relacionadas à validação dos dados e ao processamento das regras de negócios.
+
+#Visão (View):
+A Visão é responsável pela apresentação dos dados ao usuário final.
+Ela exibe as informações do Modelo de forma visualmente atraente e interativa, utilizando elementos de interface gráfica como HTML, CSS e JavaScript em aplicações web.
+A Visão não deve conter lógica de negócios complexa; seu foco principal é exibir os dados de forma clara e compreensível para o usuário.
+
+#Controlador (Controller):
+O Controlador atua como intermediário entre o Modelo e a Visão.
+Ele recebe as interações do usuário na interface gráfica (View) e as traduz em ações que afetam o Modelo ou a própria Visão.
+O Controlador processa as requisições do usuário, atualiza o estado do Modelo conforme necessário e atualiza a Visão para refletir essas alterações.
+
+
+#Fluxo de funcionamento:
+O usuário interage com a interface gráfica (View), como clicando em um botão ou preenchendo um formulário.
+A interação do usuário é capturada pelo Controlador, que decide como lidar com essa interação.
+O Controlador pode fazer chamadas ao Modelo para atualizar dados ou obter informações necessárias para responder à interação do usuário.
+Após as alterações no Modelo, o Controlador atualiza a Visão para refletir as mudanças aos olhos do usuário.
+O ciclo continua conforme o usuário interage com a aplicação, mantendo a separação clara entre Modelo, Visão e Controlador.
+Essa separação de responsabilidades permite uma estrutura modular e facilita a manutenção e evolução da aplicação, pois mudanças em uma camada geralmente têm impacto limitado nas outras camadas.
