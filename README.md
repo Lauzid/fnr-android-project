@@ -42,7 +42,16 @@ Essa página proporciona aos jogadores uma compreensão abrangente da carta esco
 
 ![image](https://github.com/Lauzid/fnr-android-project/assets/117421458/dd03c2af-cff9-4262-a2dd-6b5ea350bd23)
 
-# Requisito 3:
+# Requisito 3: Mecanismo de busca
+
+O mecanismo de busca com uma barra exclusiva para pesquisa por nomes de cartas no Magic: The Gathering (MTG) permite aos usuários encontrar cartas específicas de forma rápida e eficiente.
+
+A barra de pesquisa no mecanismo de busca permite aos usuários inserir o nome da carta que desejam encontrar no MTG. Ao digitar o nome da carta na barra de pesquisa e acionar a busca, o sistema retorna os resultados correspondentes ao nome exato ou semelhante à entrada do usuário.
+
+Essa funcionalidade proporciona uma experiência intuitiva aos usuários, facilitando a localização de cartas específicas dentro de um vasto catálogo de cartas do MTG. A busca por nome é especialmente útil para jogadores que buscam cartas específicas para completar seus decks ou explorar estratégias específicas.
+
+![image](https://github.com/Lauzid/fnr-android-project/assets/121409314/bc7df459-e4a2-455c-a1d7-0369b1ce0ce7)
+
 
 # Requisito 4:
 
