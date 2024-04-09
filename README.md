@@ -1,5 +1,3 @@
-![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/6b2e325f-ee53-4c19-98fb-40a06c3346e5)# fnr-android-project
-
 # GrimoireMTG: grupo 1
 - Adrian Modesto Lauzid
 - Artur Vinícius Lima Ramos da Silva
