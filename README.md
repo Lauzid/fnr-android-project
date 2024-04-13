@@ -30,7 +30,7 @@ Através da funcionalidade de listar coleções, os usuários têm acesso rápid
 ![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/3aad1dfe-d391-489d-b2d1-26f6cbd0b896)
 
 
-# Requisito 2: Página de Detalhamento de Cartas
+# Requisito 3: Página de Detalhamento de Cartas
 
 A página de detalhamento de carta do Magic: The Gathering (MTG) é projetada para fornecer aos usuários informações detalhadas e visuais sobre uma carta específica do jogo.
 
@@ -49,7 +49,7 @@ Essa página proporciona aos jogadores uma compreensão abrangente da carta esco
 
 ![image](https://github.com/Lauzid/fnr-android-project/assets/117421458/dd03c2af-cff9-4262-a2dd-6b5ea350bd23)
 
-# Requisito 3: Mecanismo de busca
+# Requisito 4: Mecanismo de busca
 
 O mecanismo de busca com uma barra exclusiva para pesquisa por nomes de cartas no Magic: The Gathering (MTG) permite aos usuários encontrar cartas específicas de forma rápida e eficiente.
 
@@ -60,6 +60,12 @@ Essa funcionalidade proporciona uma experiência intuitiva aos usuários, facili
 ![image](https://github.com/Lauzid/fnr-android-project/assets/121409314/bc7df459-e4a2-455c-a1d7-0369b1ce0ce7)
 
 
-# Requisito 4: Filtro
+# Requisito 5: Filtro
 
-# Requisito 5: Favoritos
+A função de filtragem de cartas na nossa aplicação permite aos usuários explorar e encontrar cartas específicas com base em diferentes critérios, tornando a pesquisa mais eficiente e direcionada.
+É uma ferramenta essencial na nossa aplicação, proporcionando aos usuários uma maneira fácil e rápida de encontrar as cartas desejadas com base em critérios como cor, tipo e raridade.
+
+![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/2ecb41f3-6279-4c0f-83cc-f8ab5182fa45)
+
+
+# Requisito 6: Favoritos
