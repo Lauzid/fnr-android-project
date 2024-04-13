@@ -14,7 +14,13 @@ https://www.figma.com/file/APmX398bDJ9AbX3c6gRhnO/GrimoireMTG?type=design&node-i
 # Doc de Requisitos
 https://docs.google.com/document/d/1Yp-0MAeedumbe75an_35sOCIwNzMSGWsEkDzI9Ry2gQ/edit?usp=sharing
 
-# Requisito 1: Listar Coleções
+# Requisito 1: Registro
+A funcionalidade da tela de registro do usuário consiste em oferecer um formulário intuitivo para que novos usuários possam criar uma conta no aplicativo. Nessa tela, os usuários inserem seu nome, endereço de e-mail e senha, proporcionando acesso às diversas funcionalidades oferecidas pelo aplicativo, como a lista de coleções de cartas do Magic: The Gathering (MTG). Após o preenchimento do formulário, os usuários recebem um e-mail de confirmação para validar sua conta e concluir o processo de registro. Essa funcionalidade é essencial para garantir uma experiência personalizada e segura aos usuários, permitindo que explorem todas as características e benefícios do aplicativo de forma conveniente e eficiente.
+
+![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/c22513bb-1122-4867-a2c2-40fad76b62ec)
+
+
+# Requisito 2: Listar Coleções
 
 A funcionalidade de listar coleções de cartas do Magic: The Gathering (MTG) permite aos usuários explorar uma ampla variedade de conjuntos de cartas do jogo, proporcionando uma experiência informativa e imersiva. Ao acessar esta funcionalidade, os usuários são apresentados a uma interface intuitiva que exibe os nomes das coleções disponíveis no MTG.
 
@@ -53,6 +59,6 @@ Essa funcionalidade proporciona uma experiência intuitiva aos usuários, facili
 ![image](https://github.com/Lauzid/fnr-android-project/assets/121409314/bc7df459-e4a2-455c-a1d7-0369b1ce0ce7)
 
 
-# Requisito 4:
+# Requisito 4: Filtro
 
-# Requisito 5:
+# Requisito 5: Favoritos
