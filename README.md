@@ -63,7 +63,7 @@ Essa funcionalidade proporciona uma experiência intuitiva aos usuários, facili
 # Requisito 5: Filtro
 
 A função de filtragem de cartas na nossa aplicação permite aos usuários explorar e encontrar cartas específicas com base em diferentes critérios, tornando a pesquisa mais eficiente e direcionada.
-É uma ferramenta essencial na nossa aplicação, proporcionando aos usuários uma maneira fácil e rápida de encontrar as cartas desejadas com base em critérios como cor, tipo e raridade.
+É uma ferramenta essencial na nossa aplicação, proporcionando aos usuários uma maneira fácil e rápida de encontrar as cartas desejadas com filtros de cor, tipo e raridade.
 
 ![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/2ecb41f3-6279-4c0f-83cc-f8ab5182fa45)
 
