@@ -73,6 +73,9 @@ A função de filtragem de cartas na nossa aplicação permite aos usuários exp
 
 # Requisito 6: Favoritos
 
+A funcionalidade de favoritar permite que os usuários possam marcar uma carta como favorita clicando em uma estrela. Essa carta favorita será destacada com uma estrela na lista geral de cartas. 
+Quando o usuário abrir uma carta que marcou como favorita, verá mesma estrela na cor roxa, sinalizando que ela é uma de suas favoritas. Além disso, o aplicativo terá uma lista apenas com suas cartas
+favoritas, facilitando a localização delas, quando desejar.
 
 ![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/0331aca9-696b-45ef-94ed-16b5cd1001c0)
 
