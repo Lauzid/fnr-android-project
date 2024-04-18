@@ -18,7 +18,8 @@ https://docs.google.com/document/d/1Yp-0MAeedumbe75an_35sOCIwNzMSGWsEkDzI9Ry2gQ/
 A funcionalidade da tela de registro do usuário consiste em oferecer um formulário intuitivo para que novos usuários possam criar uma conta no aplicativo. Nessa tela, os usuários inserem seu nome, endereço de e-mail e senha, proporcionando acesso às diversas funcionalidades oferecidas pelo aplicativo, como a lista de coleções de cartas do Magic: The Gathering (MTG). 
 Essa funcionalidade é essencial para garantir uma experiência personalizada e segura aos usuários, permitindo que explorem todas as características e benefícios do aplicativo de forma conveniente e eficiente.
 
-![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/c22513bb-1122-4867-a2c2-40fad76b62ec)
+![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/f37abfc8-4cc8-4f16-9c2e-74e4e84ce8dd)
+
 
 
 # Requisito 2: Listar Coleções
