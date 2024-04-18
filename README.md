@@ -28,7 +28,8 @@ A funcionalidade de listar coleções de cartas do Magic: The Gathering (MTG) pe
 
 Através da funcionalidade de listar coleções, os usuários têm acesso rápido e fácil às informações sobre os diferentes conjuntos de cartas do MTG, incluindo coleções clássicas e lançamentos mais recentes. Essa funcionalidade não apenas serve como uma ferramenta para os jogadores explorarem e planejarem suas estratégias, mas também como uma fonte de conhecimento sobre a evolução do jogo e suas diversas temáticas ao longo do tempo.
 
-![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/3aad1dfe-d391-489d-b2d1-26f6cbd0b896)
+![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/b9f2dabf-dc5d-408c-bc3e-3a0269f1db24)
+
 
 
 # Requisito 3: Página de Detalhamento de Cartas
@@ -48,7 +49,7 @@ Legalidade: Informações sobre a legalidade da carta em diferentes formatos de 
 
 Essa página proporciona aos jogadores uma compreensão abrangente da carta escolhida, ajudando-os a planejar estratégias e explorar o vasto universo do MTG.
 
-![image](https://github.com/Lauzid/fnr-android-project/assets/117421458/dd03c2af-cff9-4262-a2dd-6b5ea350bd23)
+![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/38a12cc9-bc83-4a67-b17f-70fbab994b9b)
 
 # Requisito 4: Mecanismo de busca
 
@@ -58,7 +59,8 @@ A barra de pesquisa no mecanismo de busca permite aos usuários inserir o nome d
 
 Essa funcionalidade proporciona uma experiência intuitiva aos usuários, facilitando a localização de cartas específicas dentro de um vasto catálogo de cartas do MTG. A busca por nome é especialmente útil para jogadores que buscam cartas específicas para completar seus decks ou explorar estratégias específicas.
 
-![image](https://github.com/Lauzid/fnr-android-project/assets/121409314/bc7df459-e4a2-455c-a1d7-0369b1ce0ce7)
+![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/e4ae8f87-d18c-4df9-a05d-d959b05094aa)
+
 
 
 # Requisito 5: Filtro
@@ -70,3 +72,7 @@ A função de filtragem de cartas na nossa aplicação permite aos usuários exp
 
 
 # Requisito 6: Favoritos
+
+
+![image](https://github.com/Lauzid/fnr-android-project/assets/69322864/0331aca9-696b-45ef-94ed-16b5cd1001c0)
+
