@@ -6,4 +6,5 @@
     <string name="type_email">Type your email:</string>
     <string name="type_pwd">Type your password:</string>
     <string name="login">Login</string>
+
 </resources>
