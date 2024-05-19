@@ -12,7 +12,8 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/project_name" />
+        android:text="@string/project_name"
+        android:textSize="34sp" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -22,14 +23,14 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edtName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_margin="16dp"
         android:hint="@string/type_name" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/type_email" />
@@ -37,7 +38,7 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edtPwd"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/type_pwd" />
@@ -47,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/login" />
+        android:text="@string/login"
+        android:textSize="20sp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
