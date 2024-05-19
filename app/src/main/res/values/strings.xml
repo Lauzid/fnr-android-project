@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">fnr-android-project</string>
+    <string name="project_name">GrimoireMTG</string>
+    <string name="welcome_message_initial">Welcome to GrimoireMTG</string>
+    <string name="type_name">Type your username:</string>
+    <string name="type_email">Type your email:</string>
+    <string name="type_pwd">Type your password:</string>
+    <string name="login">Login</string>
 </resources>
