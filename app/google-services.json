@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "719009207757",
+    "project_id": "fnr-android-project",
+    "storage_bucket": "fnr-android-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719009207757:android:b3be2a254f62888691a084",
+        "android_client_info": {
+          "package_name": "com.example.fnr_android_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7xSrWfwH6hIABgEpY9NdAM9NZ24u26E4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
