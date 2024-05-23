@@ -21,4 +21,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+    companion object {
+        const val USER = "USER"
+    }
 }

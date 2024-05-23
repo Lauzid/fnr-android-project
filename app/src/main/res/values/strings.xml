@@ -1,10 +1,15 @@
 <resources>
-    <string name="app_name">fnr-android-project</string>
-    <string name="project_name">GrimoireMTG</string>
+    <string name="app_name">GrimoireMTG</string>
     <string name="welcome_message_initial">Welcome to GrimoireMTG</string>
     <string name="type_name">Type your username:</string>
     <string name="type_email">Type your email:</string>
     <string name="type_pwd">Type your password:</string>
-    <string name="login">Login</string>
-
+    <string name="generic_error_message">An unexpected error occurred. Please try again later.</string>
+    <string name="message_field_required">Field %s is required!</string>
+    <string name="welcome_message">Hello %s, welcome to GrimoireMTG!</string>
+    <string name="got_login">Login</string>
+    <string name="login_error">Login Error</string>
+    <string name="username">User: %s</string>
+    <string name="field_name">Fill the field with your Name!</string>
+    <string name="email_field">Invalid E-mail!</string>
 </resources>
