@@ -13,13 +13,13 @@
     <string name="field_name">Fill the field with your Name!</string>
     <string name="email_field">Invalid E-mail!</string>
     <string name="sign_up">Sign Up</string>
-    <string name="sign_up_title">Sign Up</string>
+    <string name="sign_up_title">Sign Up to GrimoireMTG</string>
     <string name="sign_up_description">Register to get access to the GrimoireMTG app.</string>
     <string name="username_hint">Username:\n</string>
     <string name="username_email">E-mail:</string>
     <string name="password">Password:\n</string>
     <string name="password_confirmation">Confirm Password:</string>
     <string name="message_password_not_match">Passwords do not match</string>
-    <string name="password_field">Invalid passoword</string>
+    <string name="password_field">Invalid password!</string>
     <string name="error_sign_up">There has been a problem with your registration, please check your details and try again.</string>
 </resources>
