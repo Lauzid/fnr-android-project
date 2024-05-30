@@ -5,6 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.fnr_android_project.MainActivity">
+    tools:context="com.example.fnr_android_project.ui.MainActivity">
 
   </androidx.constraintlayout.widget.ConstraintLayout>

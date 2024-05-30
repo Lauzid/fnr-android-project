@@ -1,10 +1,11 @@
-package com.example.fnr_android_project
+package com.example.fnr_android_project.ui
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.fnr_android_project.R
 import com.example.fnr_android_project.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
