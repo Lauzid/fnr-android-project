@@ -28,4 +28,13 @@
     <string name="collection_name">%s</string>
     <string name="back_arrow">back arrow</string>
     <string name="profile_ic">profile icon</string>
+    <string name="search_bar_hint">Search cards</string>
+    <string name="rarity">rarity</string>
+    <string name="card_type">card type</string>
+    <string name="card_set">%s</string>
+    <string name="green_mana">green mana</string>
+    <string name="red_mana">red mana</string>
+    <string name="black_mana">black mana</string>
+    <string name="blue_mana">blue mana</string>
+    <string name="white_mana">white mana</string>
 </resources>
