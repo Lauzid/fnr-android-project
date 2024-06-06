@@ -12,20 +12,22 @@
       android:id="@+id/username"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
       android:layout_alignParentEnd="true"
-      android:layout_marginEnd="16dp"
       android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
       android:text="@string/username"
       android:textColor="#000"
       android:textSize="16sp"
       app:drawableStartCompat="@drawable/rounded_button" />
 
   <TextView
-      android:id="@+id/appTitle"
+      android:id="@+id/menuAppTitle"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_below="@+id/username"
       android:layout_centerHorizontal="true"
-      android:layout_marginTop="48dp"
+      android:layout_marginTop="10dp"
       android:text="@string/app_name"
       android:textColor="#000"
       android:textSize="24sp"
@@ -33,9 +35,10 @@
 
   <LinearLayout
       android:id="@+id/buttonContainer"
+      style="?android:attr/buttonBarStyle"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_below="@id/appTitle"
+      android:layout_below="@id/menuAppTitle"
       android:layout_centerHorizontal="true"
       android:layout_marginTop="32dp"
       android:orientation="horizontal"
@@ -43,6 +46,7 @@
 
     <Button
         android:id="@+id/collectionsButton"
+        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"
@@ -52,6 +56,7 @@
 
     <Button
         android:id="@+id/favoritesButton"
+        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="@drawable/rounded_button"
