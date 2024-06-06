@@ -22,4 +22,6 @@
     <string name="message_password_not_match">Passwords do not match</string>
     <string name="password_field">Invalid password!</string>
     <string name="error_sign_up">There has been a problem with your registration, please check your details and try again.</string>
+    <string name="Collections">Colletions</string>
+    <string name="Favorites">Favorites</string>
 </resources>
