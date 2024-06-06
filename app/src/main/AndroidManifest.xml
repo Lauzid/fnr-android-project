@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Listview"
         tools:targetApi="31">
         <activity
+            android:name=".ui.CollectionActivity"
+            android:exported="false" />
+        <activity
             android:name=".group_auth.SignUpActivity"
             android:exported="false"
             android:taskAffinity="com.example.create_add_layout.group_auth" />
