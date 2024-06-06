@@ -39,6 +39,7 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
+
     <EditText
         android:id="@+id/searchBar"
         android:layout_width="297dp"
@@ -67,22 +68,25 @@
         android:gravity="center_horizontal"
         android:padding="8dp">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/filterWhite"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:contentDescription="@string/white_mana"
+            android:background="none"
             android:src="@drawable/ic_white_mana" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/filterBlue"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/blue_mana"
-            android:src="@drawable/ic_blue_mana" />
+            android:background="none"
+            android:src="@drawable/ic_blue_mana"
+            />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/filterBlack"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -90,7 +94,7 @@
             android:contentDescription="@string/black_mana"
             android:src="@drawable/ic_black_mana" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/filterRed"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -98,7 +102,7 @@
             android:contentDescription="@string/red_mana"
             android:src="@drawable/ic_red_mana" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/filterGreen"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -106,6 +110,9 @@
             android:contentDescription="@string/green_mana"
             android:src="@drawable/ic_green_mana" />
     </LinearLayout>
+
+
+
 
     <Button
         android:id="@+id/rarityButton"
