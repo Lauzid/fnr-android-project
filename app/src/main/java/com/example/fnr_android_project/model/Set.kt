@@ -1,5 +1,9 @@
 package com.example.fnr_android_project.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Set(
     val arena_code: String,
     val block: String,
@@ -21,4 +25,4 @@ data class Set(
     val set_type: String,
     val tcgplayer_id: Int,
     val uri: String
-)
+): Parcelable

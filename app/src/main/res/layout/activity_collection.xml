@@ -67,6 +67,7 @@
         android:textSize="16sp" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collectionRecyclerView"
         android:layout_width="227dp"
         android:layout_height="370dp"
         android:layout_below="@+id/subtitle"
@@ -76,5 +77,6 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        tools:listitem="@layout/collection_item"/>
 </RelativeLayout>
