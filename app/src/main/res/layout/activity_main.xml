@@ -1,124 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#f5f5f5"
+    tools:context=".ui.MainActivity">
 
-  <!-- Header with Back Arrow and User Icon -->
-  <LinearLayout
-      android:id="@+id/header"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal"
-      android:padding="16dp"
-      android:gravity="center_vertical">
-
-    <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_back_arrow" />
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="GrimoireMTG"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:gravity="center" />
-
-    <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_user_icon" />
-  </LinearLayout>
-
-  <!-- Search and Filters -->
-  <LinearLayout
-      android:id="@+id/search_and_filters"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical"
-      android:padding="16dp"
-      android:layout_below="@id/header">
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Search cards"
-        android:drawableStart="@drawable/ic_search"
-        android:padding="8dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="8dp">
-
-      <!-- Mana Filter Buttons -->
-      <ImageView
-          android:layout_width="32dp"
-          android:layout_height="32dp"
-          android:src="@drawable/ic_mana_white"
-          android:layout_marginEnd="8dp" />
-
-      <ImageView
-          android:layout_width="32dp"
-          android:layout_height="32dp"
-          android:src="@drawable/ic_mana_blue"
-          android:layout_marginEnd="8dp" />
-
-      <ImageView
-          android:layout_width="32dp"
-          android:layout_height="32dp"
-          android:src="@drawable/ic_mana_black"
-          android:layout_marginEnd="8dp" />
-
-      <ImageView
-          android:layout_width="32dp"
-          android:layout_height="32dp"
-          android:src="@drawable/ic_mana_red"
-          android:layout_marginEnd="8dp" />
-
-      <ImageView
-          android:layout_width="32dp"
-          android:layout_height="32dp"
-          android:src="@drawable/ic_mana_green"
-          android:layout_marginEnd="8dp" />
-    </LinearLayout>
-
-    <!-- Rarity and Card Type Filters -->
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Rarity" />
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Card Type" />
-  </LinearLayout>
-
-  <!-- Title and Card Count -->
   <TextView
-      android:layout_width="match_parent"
+      android:id="@+id/username"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_below="@id/search_and_filters"
-      android:text="Limited Edition Alpha (295 cards)"
-      android:padding="16dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:text="@string/username"
+      android:textColor="#000"
+      android:textSize="16sp"
+      app:drawableStartCompat="@drawable/rounded_button" />
+
+  <TextView
+      android:id="@+id/menuAppTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/username"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:text="@string/app_name"
+      android:textColor="#000"
+      android:textSize="24sp"
       android:textStyle="bold" />
 
-  <!-- Card List -->
-  <androidx.recyclerview.widget.RecyclerView
-      android:id="@+id/recyclerView"
-      android:layout_width="match_parent"
+  <LinearLayout
+      android:id="@+id/buttonContainer"
+      style="?android:attr/buttonBarStyle"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_below="@id/search_and_filters"
-      android:layout_marginTop="48dp"
-      android:padding="16dp" />
+      android:layout_below="@id/menuAppTitle"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="32dp"
+      android:orientation="horizontal"
+      android:gravity="center">
 
+    <Button
+        android:id="@+id/collectionsButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/Collections"
+        android:textColor="#fff"
+        />
+
+
+    <Button
+        android:id="@+id/favoritesButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/Favorites"
+        android:textColor="#fff" />
+  </LinearLayout>
 </RelativeLayout>
