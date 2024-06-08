@@ -1,5 +1,6 @@
 package com.example.fnr_android_project.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,7 +22,18 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        binding.collectionsButton.setOnClickListener {
+            val intent = Intent(this, ViewCollections::class.java)
+            startActivity(intent)
+        }
+
+        binding.favoritesButton.setOnClickListener {
+            val intent = Intent(this, FavoritesActivity::class.java)
+            startActivity(intent)
+        }
     }
+
     companion object {
         const val USER = "USER"
     }

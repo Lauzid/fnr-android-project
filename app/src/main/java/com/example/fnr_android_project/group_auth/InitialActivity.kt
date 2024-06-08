@@ -20,6 +20,7 @@ class InitialActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityInitialBinding
     private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -39,7 +40,7 @@ class InitialActivity : AppCompatActivity() {
     private fun setUpView() {
         binding.apply {
             btnLogin.setOnClickListener {
-                goToMainActivity()
+                attemptLogin()
             }
 
             btnSignUp.setOnClickListener {
@@ -53,46 +54,48 @@ class InitialActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun goToMainActivity() {
-        var result = true
+    private fun attemptLogin() {
         val name = binding.edtName.text.toString()
         val email = binding.edtEmail.text.toString()
         val password = binding.edtPwd.text.toString()
+
+        if (validateFields(name, email)) {
+            signInUser(email, password, name)
+        }
+    }
+
+    private fun validateFields(name: String, email: String): Boolean {
+        var isValid = true
+
         if (name.isEmpty()) {
-            Toast.makeText(
-                this@InitialActivity,
-                getString(R.string.field_name),
-                Toast.LENGTH_LONG
-            ).show()
-            result = false
+            showToast(getString(R.string.field_name))
+            isValid = false
         }
-        if (email.isFieldValid(Regex(EMAIL_REGEX))
-                .not()
-        ) {
-            Toast.makeText(
-                this@InitialActivity,
-                getString(R.string.email_field),
-                Toast.LENGTH_LONG
-            ).show()
-            result = false
+
+        if (!email.isFieldValid(Regex(EMAIL_REGEX))) {
+            showToast(getString(R.string.email_field))
+            isValid = false
         }
-        if (result) {
-            val intent = Intent(this@InitialActivity, MainActivity::class.java)
-            intent.putExtra(USER, User(name = name, email = email))
-            auth.signInWithEmailAndPassword(
-                email,
-                password
-            ).addOnCompleteListener(this) { task ->
+
+        return isValid
+    }
+
+    private fun signInUser(email: String, password: String, name: String) {
+        val intent = Intent(this@InitialActivity, MainActivity::class.java).apply {
+            putExtra(USER, User(name = name, email = email))
+        }
+
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     startActivity(intent)
                 } else {
-                    Toast.makeText(
-                        this@InitialActivity,
-                        getString(R.string.login_error),
-                        Toast.LENGTH_LONG
-                    ).show()
+                    showToast(getString(R.string.login_error))
                 }
             }
-        }
+    }
+
+    private fun showToast(message: String) {
+        Toast.makeText(this@InitialActivity, message, Toast.LENGTH_LONG).show()
     }
 }
