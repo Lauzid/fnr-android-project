@@ -8,10 +8,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fnr_android_project.R
 import com.example.fnr_android_project.databinding.ActivityMainBinding
+import com.example.fnr_android_project.model.User
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private var user: User? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25,13 +27,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.collectionsButton.setOnClickListener {
             val intent = Intent(this, ViewCollections::class.java)
+            intent.putExtra(USER, user?.name)
             startActivity(intent)
         }
 
         binding.favoritesButton.setOnClickListener {
             val intent = Intent(this, FavoritesActivity::class.java)
+            intent.putExtra(USER, user?.name)
             startActivity(intent)
         }
+
     }
 
     companion object {
