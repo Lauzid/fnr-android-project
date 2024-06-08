@@ -24,4 +24,8 @@
     <string name="error_sign_up">There has been a problem with your registration, please check your details and try again.</string>
     <string name="Favorites">Favorites\n</string>
     <string name="Collections">Collections\n</string>
+    <string name="back_arrow">back arrow\n\t</string>
+    <string name="profile_ic">profile icon</string>
+    <string name="choose_collection">Choose a collection</string>
+    <string name="collection_name">%s</string>
 </resources>
