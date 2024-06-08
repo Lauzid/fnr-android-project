@@ -53,8 +53,7 @@
         android:background="@drawable/rounded_button"
         android:text="@string/Collections"
         android:textColor="#fff"
-        />
-
+        android:enabled="true" />
 
     <Button
         android:id="@+id/favoritesButton"
@@ -63,6 +62,7 @@
         android:layout_height="50dp"
         android:background="@drawable/rounded_button"
         android:text="@string/Favorites"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        android:enabled="true" />
   </LinearLayout>
 </RelativeLayout>
