@@ -36,7 +36,7 @@ class ViewCollectionActivity : AppCompatActivity() {
     private fun setUpView() {
         binding.apply {
             collectionRecyclerViewAdapter = CollectionRecyclerViewAdapter(sets) {
-                val intent = Intent(this@ViewCollectionActivity, ActivityViewCollection::class.java)
+                val intent = Intent(this@ViewCollectionActivity, ViewCardsActivity::class.java)
                 intent.putExtra(SET, it)
                 startActivity(intent)
             }

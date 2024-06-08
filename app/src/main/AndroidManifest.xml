@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
         <activity
+            android:name=".ui.ViewCardsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ViewCollectionActivity"
             android:exported="false" />
         <activity

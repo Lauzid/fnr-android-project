@@ -1,6 +1,7 @@
 package com.example.fnr_android_project.ui
 
 //import android.content.Intent
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -26,22 +27,22 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         setUpView()
-//        setUpListeners()
+        setUpListeners()
     }
     private fun setUpView(){
         val user = intent.getExtra<User>(USER)
         binding.username.text = user?.name
     }
 
-//    private fun setUpListeners(){
-//        binding.collectionsButton.setOnClickListener {
-//            val intent = Intent(this, ViewCollectionActivity::class.java)
-//            startActivity(intent)
-//        }
-//
+    private fun setUpListeners(){
+        binding.collectionsButton.setOnClickListener {
+            val intent = Intent(this, ViewCollectionActivity::class.java)
+            startActivity(intent)
+        }
+
 //        binding.favoritesButton.setOnClickListener {
 //            val intent = Intent(this, ViewCollectionActivity::class.java)
 //            startActivity(intent)
 //        }
-//    }
+    }
 }
