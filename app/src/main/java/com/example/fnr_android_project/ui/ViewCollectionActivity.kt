@@ -19,7 +19,8 @@ const val SET = "set"
 class ViewCollectionActivity : AppCompatActivity() {
     private lateinit var binding: ActivityViewCollectionBinding
     private var sets = mutableListOf<Set>()
-    private lateinit var collectionRecyclerViewAdapter: CollectionRecyclerViewAdapter
+    private var collectionRecyclerViewAdapter: CollectionRecyclerViewAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,17 +34,14 @@ class ViewCollectionActivity : AppCompatActivity() {
         setUpView()
         loadSets()
     }
+
     private fun setUpView() {
         binding.apply {
-            collectionRecyclerViewAdapter = CollectionRecyclerViewAdapter(sets) {
-                val intent = Intent(this@ViewCollectionActivity, ViewCardsActivity::class.java)
-                intent.putExtra(SET, it)
-                startActivity(intent)
-            }
             collectionRecyclerView.layoutManager = LinearLayoutManager(this@ViewCollectionActivity)
             collectionRecyclerView.adapter = collectionRecyclerViewAdapter
         }
     }
+
     private fun loadSets() {
         Network.api.getSets().enqueue(
             object : retrofit2.Callback<List<Set>> {
@@ -54,12 +52,20 @@ class ViewCollectionActivity : AppCompatActivity() {
                 ) {
                     if (response.isSuccessful) {
                         sets.clear()
-                        sets.addAll(response.body()!!)
-                        collectionRecyclerViewAdapter.notifyDataSetChanged()
+                        response.body()?.let {
+                            sets.addAll(it)
+                            collectionRecyclerViewAdapter = CollectionRecyclerViewAdapter(sets) {
+                                val intent = Intent(this@ViewCollectionActivity, ViewCardsActivity::class.java)
+                                intent.putExtra(SET, it)
+                                startActivity(intent)
+                            }
+                            collectionRecyclerViewAdapter?.notifyDataSetChanged()
+                            binding.collectionRecyclerView.adapter = collectionRecyclerViewAdapter
+                        }
                     } else {
                         Toast.makeText(
                             this@ViewCollectionActivity,
-                            "Error loading houses",
+                            "Error loading data",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
@@ -67,6 +73,11 @@ class ViewCollectionActivity : AppCompatActivity() {
 
                 override fun onFailure(call: retrofit2.Call<List<Set>>, t: Throwable) {
                     t.printStackTrace()
+                    Toast.makeText(
+                        this@ViewCollectionActivity,
+                        "Error loading data",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             })
     }

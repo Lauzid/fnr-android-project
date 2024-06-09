@@ -1,6 +1,5 @@
 package com.example.fnr_android_project.ui
 
-//import android.content.Intent
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -37,6 +36,7 @@ class MainActivity : AppCompatActivity() {
     private fun setUpListeners(){
         binding.collectionsButton.setOnClickListener {
             val intent = Intent(this, ViewCollectionActivity::class.java)
+            intent.putExtra(USER, binding.username.text)
             startActivity(intent)
         }
 

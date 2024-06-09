@@ -8,7 +8,7 @@ class CollectionViewHolder (private val collectionItemBinding: CollectionItemBin
     RecyclerView.ViewHolder(collectionItemBinding.root) {
     fun bind(set: Set, onItemClicked: (Set) -> Unit) {
         collectionItemBinding.apply {
-            root.setOnClickListener { (onItemClicked(set)) }
+            root.setOnClickListener { onItemClicked(set) }
             collectionName.text = set.name
         }
     }
