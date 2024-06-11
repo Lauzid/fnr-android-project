@@ -1,6 +1,5 @@
 package com.example.fnr_android_project.ui
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -11,9 +10,12 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fnr_android_project.R
 import com.example.fnr_android_project.databinding.ActivityViewCollectionBinding
+import com.example.fnr_android_project.model.BaseSetResponse
+import com.example.fnr_android_project.model.Set
 import com.example.fnr_android_project.network.Network
 import com.example.fnr_android_project.ui.collection_recycler_view.CollectionRecyclerViewAdapter
-import com.example.fnr_android_project.model.Set
+import retrofit2.Call
+import retrofit2.Response
 
 const val SET = "set"
 class ViewCollectionActivity : AppCompatActivity() {
@@ -25,11 +27,6 @@ class ViewCollectionActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityViewCollectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
         setUpView()
         loadSets()
     }
@@ -46,16 +43,24 @@ class ViewCollectionActivity : AppCompatActivity() {
     }
     private fun loadSets() {
         Network.api.getSets().enqueue(
-            object : retrofit2.Callback<List<Set>> {
-                @SuppressLint("NotifyDataSetChanged")
+            object : retrofit2.Callback<BaseSetResponse> {
                 override fun onResponse(
-                    call: retrofit2.Call<List<Set>>,
-                    response: retrofit2.Response<List<Set>>
+                    call: Call<BaseSetResponse>,
+                    response: Response<BaseSetResponse>
                 ) {
                     if (response.isSuccessful) {
                         sets.clear()
-                        sets.addAll(response.body()!!)
-                        collectionRecyclerViewAdapter.notifyDataSetChanged()
+                        val responseBody = response.body()
+                        responseBody?.let { baseSetResponse ->
+                            baseSetResponse.data.let { sets.addAll(it) }
+                            collectionRecyclerViewAdapter.notifyDataSetChanged()
+                        } ?: {
+                            Toast.makeText(
+                                this@ViewCollectionActivity,
+                                "Error loading houses",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
                     } else {
                         Toast.makeText(
                             this@ViewCollectionActivity,
@@ -65,7 +70,7 @@ class ViewCollectionActivity : AppCompatActivity() {
                     }
                 }
 
-                override fun onFailure(call: retrofit2.Call<List<Set>>, t: Throwable) {
+                override fun onFailure(call: Call<BaseSetResponse>, t: Throwable) {
                     t.printStackTrace()
                 }
             })
