@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.parcelizeAndroid)
     alias(libs.plugins.googleService)
+    //id("com.google.devtools.ksp") version "1.8.10-1.0.9"
 }
 
 android {
@@ -51,6 +52,9 @@ dependencies {
     implementation(libs.squareup.picasso.picasso)
     implementation(libs.squareup.retrofit2.retrofit)
     implementation(libs.squareup.retrofit2.converter.gson)
+    //implementation("androidx.room:room-runtime:2.5.0")
+    //ksp("androidx.room:room-compiler:2.5.0")
+
 
     // Firebase
     implementation(platform(libs.firebase.bom))
