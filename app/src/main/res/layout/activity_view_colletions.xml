@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/back_arrow"
@@ -21,7 +22,9 @@
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/username"
         android:textColor="#000"
@@ -40,29 +43,11 @@
         android:textStyle="bold" />
 
 
-    <EditText
-        android:id="@+id/searchBar"
-        android:layout_width="297dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/appTitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="-42dp"
-        android:layout_toStartOf="@+id/username"
-        android:layout_toEndOf="@+id/backButton"
-        android:autofillHints=""
-        android:background="@drawable/search_bar_background"
-        android:drawableStart="@drawable/ic_search"
-        android:hint="@string/search_bar_hint"
-        android:inputType="text"
-        android:padding="12dp" />
-
     <LinearLayout
         android:id="@+id/filterContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/searchBar"
+        android:layout_below="@id/appTitle"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
@@ -70,16 +55,16 @@
 
         <ImageButton
             android:id="@+id/filterWhite"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:contentDescription="@string/white_mana"
             android:background="none"
             android:src="@drawable/ic_white_mana" />
 
         <ImageButton
             android:id="@+id/filterBlue"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/blue_mana"
             android:background="none"
@@ -88,30 +73,28 @@
 
         <ImageButton
             android:id="@+id/filterBlack"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/black_mana"
             android:src="@drawable/ic_black_mana" />
 
         <ImageButton
             android:id="@+id/filterRed"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/red_mana"
             android:src="@drawable/ic_red_mana" />
 
         <ImageButton
             android:id="@+id/filterGreen"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/green_mana"
             android:src="@drawable/ic_green_mana" />
     </LinearLayout>
-
-
 
 
     <Button
@@ -146,5 +129,13 @@
         android:id="@+id/cardRecyclerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_below="@+id/filterContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/cards"/>
 </RelativeLayout>

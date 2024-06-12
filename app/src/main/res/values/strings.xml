@@ -37,4 +37,5 @@
     <string name="black_mana">black mana</string>
     <string name="blue_mana">blue mana</string>
     <string name="white_mana">white mana</string>
+    <string name="cards">%s</string>
 </resources>
