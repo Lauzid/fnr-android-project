@@ -28,4 +28,9 @@
     <string name="profile_ic">profile icon</string>
     <string name="choose_collection">Choose a collection</string>
     <string name="collection_name">%s</string>
+    <string name="white_mana">white mana</string>
+    <string name="blue_mana">blue mana</string>
+    <string name="black_mana">black mana</string>
+    <string name="red_mana">red mana</string>
+    <string name="green_mana">green mana</string>
 </resources>

@@ -12,6 +12,6 @@ object Network {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val api = retrofit.create(Api::class.java)
+    val api: Api = retrofit.create(Api::class.java)
 
 }
