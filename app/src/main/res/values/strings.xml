@@ -34,4 +34,6 @@
     <string name="red_mana">red mana</string>
     <string name="green_mana">green mana</string>
     <string name="cards">%s</string>
+    <string name="typer_card">Card type</string>
+    <string name="rarity_card">Rarity</string>
 </resources>

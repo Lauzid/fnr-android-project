@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".ui.ViewCardsActivity">
+
+    <TextView
+        android:id="@+id/favoritesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filterContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:text="Favoritos"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/filtersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filterContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:prompt="@string/rarity_card"
+        android:padding="8dp">
+
+        <Spinner
+            android:id="@+id/raritySpinner"
+            style="@style/RoundedSpinner"
+            android:layout_width="120dp"
+            android:layout_height="36dp">
+            //android:prompt="@strings/rarity_card" />
+
+        <Spinner
+            android:id="@+id/cardTypeSpinner"
+            style="@style/RoundedSpinner"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp">
+          //  android:prompt="@strings/typer_card" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/back_arrow"
+        android:src="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="3dp"
+        android:text="@string/username"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="@string/app_name"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/filterContainer"
+        android:layout_width="383dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/appTitle"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/filterWhite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/white_mana"
+            android:src="@drawable/ic_white_mana" />
+
+        <ImageButton
+            android:id="@+id/filterBlue"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/blue_mana"
+            android:src="@drawable/ic_blue_mana" />
+
+        <ImageButton
+            android:id="@+id/filterBlack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/black_mana"
+            android:src="@drawable/ic_black_mana" />
+
+        <ImageButton
+            android:id="@+id/filterRed"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/red_mana"
+            android:src="@drawable/ic_red_mana" />
+
+        <ImageButton
+            android:id="@+id/filterGreen"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/green_mana"
+            android:src="@drawable/ic_green_mana" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="506dp"
+        android:layout_below="@+id/filtersLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/cards" />
+
+
+</RelativeLayout>

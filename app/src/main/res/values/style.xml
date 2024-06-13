@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedSpinner" parent="Widget.AppCompat.Spinner.DropDown">
+        <item name="android:popupBackground">@drawable/spinner_dropdown_background</item>
+        <item name="android:dropDownVerticalOffset">-30dp</item>
+    </style>
+</resources>
