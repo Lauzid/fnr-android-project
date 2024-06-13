@@ -28,7 +28,7 @@ class ViewCardsActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     val responseBody = response.body()
                     //binding.set.setText(responseBody?.data.toString())
-                    binding.set.cardText(responseBody?.data.toString())
+                    binding.cardRecyclerView.setText(responseBody?.data.toString())
                 } else {
 
                 }
