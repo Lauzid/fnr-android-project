@@ -27,7 +27,8 @@ class ViewCardsActivity : AppCompatActivity() {
             ) {
                 if (response.isSuccessful) {
                     val responseBody = response.body()
-                    binding.set.setText(responseBody?.data.toString())
+                    //binding.set.setText(responseBody?.data.toString())
+                    binding.set.cardText(responseBody?.data.toString())
                 } else {
 
                 }
@@ -36,6 +37,8 @@ class ViewCardsActivity : AppCompatActivity() {
             override fun onFailure(call: Call<BaseSetResponse>, t: Throwable) {
                 t.printStackTrace()
             }
+
+
         })
     }
 }

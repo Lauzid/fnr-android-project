@@ -58,7 +58,6 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:contentDescription="@string/white_mana"
-            android:background="none"
             android:src="@drawable/ic_white_mana" />
 
         <ImageButton
@@ -67,9 +66,7 @@
             android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/blue_mana"
-            android:background="none"
-            android:src="@drawable/ic_blue_mana"
-            />
+            android:src="@drawable/ic_blue_mana" />
 
         <ImageButton
             android:id="@+id/filterBlack"
