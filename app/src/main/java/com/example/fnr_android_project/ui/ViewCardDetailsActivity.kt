@@ -1,5 +1,6 @@
 package com.example.fnr_android_project.ui
 
+import ImageUris
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -49,6 +50,17 @@ class ViewCardDetailsActivity : AppCompatActivity() {
                         binding.cardType.text = card.type_line
                         binding.cardManaCost.text = card.mana_cost
                         binding.cardOracleText.text = card.oracle_text
+
+                        // Aqui configuramos as imagens
+                        val imageUris = ImageUris(
+                            small = card.image_uris.small,
+                            normal = card.image_uris.normal,
+                            large = card.image_uris.large,
+                            png = card.image_uris.png,
+                            art_crop = card.image_uris.art_crop,
+                            border_crop = card.image_uris.border_crop
+                        )
+
                         Picasso.get()
                             .load(card.image_uris.normal)
                             .into(binding.cardImage)

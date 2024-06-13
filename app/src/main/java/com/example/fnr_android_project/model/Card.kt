@@ -1,5 +1,6 @@
 package com.example.fnr_android_project.model
 
+import ImageUris
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
@@ -13,12 +14,3 @@ data class Card(
     // Outras propriedades da carta
 ) : Parcelable
 
-@Parcelize
-data class ImageUris(
-    val small: String = "",
-    val normal: String = "",
-    val large: String = "",
-    val png: String = "",
-    val art_crop: String = "",
-    val border_crop: String = ""
-) : Parcelable
